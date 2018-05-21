@@ -1,0 +1,16 @@
+$(document).ready(function() {
+    $("#loginForm").on('submit', function(e) {
+       e.preventDefault();
+       var user = $("#usuario input").val(),
+         senha = $("#senha input").val();
+        if (senha.trim() === "leo" && user.trim() === "leo") {
+            alert("Seja bem-vindo");
+            window.location = "principal.html";;
+        }
+        else if (senha === "" || user === ""){
+            alert("Digite seu login e Senha");
+        }
+        else {
+            alert("usuário ou senha inválido");
+        }
+   });

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Primeira Avaliação</title>
+        <link rel="stylesheet" href="PastaScripts/jquery-ui-1.12.1.custom/jquery-ui.css"/>
+        <script src="PastaScripts/jquery-3.3.1.js"></script>
+        <script src="PastaScripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="PastaScripts/acoes.js"></script>
+        <link rel="stylesheet" href="visuais.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id=index title="Página de Login">
+        <form>
+            <label for="usuario">Usuário:</label><br/>
+            <input class=margem name=nome id=usuario type="text" required/><br/>
+            <label for="senha">Senha:</label><br/>
+            <input class=margem name=senha id=senha type="password" required/><br/>
+            <input class=margem type="submit" onclick="return validarLogin()"/><br/>
+        </form>
+        <p>Login de teste: Usuário: admin; Senha: admin</p>
+    </body>
+</html>
