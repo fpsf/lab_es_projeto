@@ -15,10 +15,16 @@ utilizar o "src" abaixo:
 src: url("https://fonts.googleapis.com/css?family=Ubuntu");
 */
 
-/*src: url("/usr/share/fonts/extra/Ubuntu");*/
+/*
+src: url("/usr/share/fonts/extra/Ubuntu");
+src: url("fonts/Ubuntu/Ubuntu-Regular.ttf");
+src: url("fonts/Ubuntu/Ubuntu-Regular.ttf") format('truetype');
+*/
 @font-face{
-    font-family: Ubuntu, sans-serif;
-    src: url("/usr/share/fonts/extra/Ubuntu");
+    font-family: Ubuntu;
+    src: url("fonts/Ubuntu/Ubuntu-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media only screen and (min-width: 768px) {
@@ -28,20 +34,20 @@ src: url("https://fonts.googleapis.com/css?family=Ubuntu");
 }
 
 label{
-    font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu;
 }
 
 p{
-    font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu;
 }
 
 a{
-    font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu;
     /*margin-top: 10px;*/
 }
 
 input.margem{
-    font-family: Ubuntu, sans-serif;
+    font-family: Ubuntu;
     margin: 10px 0;
     box-sizing: border-box;
 }
